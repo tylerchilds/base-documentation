@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Base Documentation</title>
+
+	<link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/documentation.css">
+</head>
+<body>
+
+  <div class="doc-sidebar">
+  	<h1 class="logo">Logo</h1>
+	  <ul class="doc-navigation">
+	    <li>
+	      <a href="#samples">Samples</a>
+	      <ul>
+	        <li>
+	        	<a href="#codeblock">Code Block</a>
+	        </li>
+	        <li>
+	        	<a href="#tables">Tables</a>
+	        </li>
+	      </ul>
+	    </li>
+	  </ul>
+
+	  <form class="doc-mobile-navigation js-doc-mobile-navigation">
+      <select name="navigation" id="navigation" class="js-dropdown-navigation">
+        <option value="samples">Samples</option>
+        <option value="codeblock">Code Block</option>
+        <option value="tables">Tables</option>
+      </select>
+	  </form>
+	</div>
+
+  <div class="doc-code-background"></div>
+
+  <div class="doc-content">
+    <div class="doc-toggle">
+      <div class="doc-toggle-items">
+        <a href="javascript:;" class="js-lang code-toggle toggle--php" data-language="php">PHP</a>
+        <a href="javascript:;" class="js-lang code-toggle toggle--ruby" data-language="ruby">Ruby</a>
+      </div>
+    </div>
+
+    <section class="doc-section js-scrollspy" data-scrollspy="samples">
+		  <a name="samples"></a>
+		  <h2>Samples</h2>
+
+		  <div class="doc-group">
+
+			  <div class="doc-description">
+			    <p>
+			      A standard paragraph allows for quite a bit of flexibility.
+			    </p>
+			    <ul>
+			      <li>A list item, for listy things.</li>
+			    </ul>
+			  </div>
+			  <div class="doc-code">
+			    <p>
+			      Toggleable code.
+			    </p>
+
+			    <code class="code-block toggleable-code lang-php">
+			    	php
+			    </code>
+
+			    <code class="code-block toggleable-code lang-ruby">
+			    	ruby
+			    </code>
+			  </div>
+			</div>
+		</section>
+
+    <section class="doc-section js-scrollspy" data-scrollspy="codeblock">
+		  <a name="codeblock"></a>
+		  <h3>Code block</h3>
+
+		  <div class="doc-group">
+
+			  <div class="doc-description">
+			    <p>
+			      A standard code block for dumping straight up code.
+			    </p>
+
+			    <code class="code-block">https://example.com/?actor=paul%20rudd</code>
+			  </div>
+			  <div class="doc-code">
+					<p class="code-header">Code Header</p>
+
+<pre class="prettyprint"><samp>{
+  id: 617,
+  name: 'Paul Rudd',
+  roles: [
+    {
+      title: 'Anchorman',
+      year: 2004
+    },
+    {
+      title: 'Ant Man',
+      year: 2015
+    },
+  ]
+}</samp></pre>
+			  </div>
+			</div>
+		</section>
+
+    <section class="doc-section js-scrollspy" data-scrollspy="tables">
+		  <a name="tables"></a>
+		  <h3>Tables</h3>
+
+		  <div class="doc-group">
+
+			  <div class="doc-description">
+
+			  	<h4>Parameters</h4>
+
+			  	<table class="table--bordered">
+			      <thead>
+			        <tr>
+			          <th>Name</th>
+			          <th>Description</th>
+			        </tr>
+			      </thead>
+			      <tr>
+			        <td class="cell--parameter">client_id</td>
+			        <td>Issued when you created your application</td>
+			      </tr>
+			      <tr>
+			        <td class="cell--parameter">redirect_uri</td>
+			        <td>URL to redirect back to see below</td>
+			      </tr>
+			      <tr>
+			        <td class="cell--parameter">scope</td>
+			        <td>permissions to request see below</td>
+			      </tr>
+			      <tr>
+			        <td class="cell--parameter">response_type</td>
+			        <td>Currently, the value of this parameter must always be code</td>
+			      </tr>
+			    </table>
+
+			  	<h4>Responses</h4>
+
+	  	    <table class="table--striped">
+	  	    	<thead>
+			        <tr>
+			          <th>Error</th>
+			          <th>Description</th>
+			        </tr>
+			      </thead>
+			      <tr>
+			        <td class="cell--error_code">200</td>
+			        <td>The clients were retrieved. See Response Class below for schema.</td>
+			      </tr>
+			      <tr>
+			        <td class="cell--error_code">400</td>
+			        <td>Invalid request query string. The message will vary depending on the cause.</td>
+			      </tr>
+			      <tr>
+			        <td class="cell--error_code">401</td>
+			        <td>Invalid token.</td>
+			      </tr>
+			    </table>
+			  </div>
+			</div>
+		</section>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script src="js/scrollspy.js"></script>
+  <script src="js/documentation.js"></script>
+
+</body>
+</html>

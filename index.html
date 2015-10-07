@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Base Documentation</title>
+
+	<link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/documentation.css">
+</head>
+<body>
+
+  <div class="doc-sidebar">
+  	<h1 class="logo">Logo</h1>
+	  <ul class="doc-navigation">
+	    <li>
+	      <a href="#top_level">Top Level</a>
+	      <ul>
+	        <li>
+	        	<a href="#sub_level">Sub Level</a>
+	        </li>
+	      </ul>
+	    </li>
+	  </ul>
+
+	  <form class="doc-mobile-navigation js-doc-mobile-navigation">
+      <select name="navigation" id="navigation" class="js-dropdown-navigation">
+        <option value="top_level">Top Level</option>
+        <option value="sub_level">Sub Level</option>
+      </select>
+	  </form>
+	</div>
+
+	<!-- Background color for the code section -->
+  <div class="doc-code-background"></div>
+
+  <div class="doc-content">
+    <div class="doc-toggle">
+      <div class="doc-toggle-items">
+        <a href="javascript:;" class="js-lang toggle--php" data-language="curl">PHP</a>
+        <a href="javascript:;" class="js-lang toggle--ruby" data-language="ruby">Ruby</a>
+      </div>
+    </div>
+
+    <!-- this is the actual meat of the code -->
+    <section class="doc-section js-scrollspy" data-scrollspy="top_level">
+		  <a name="top_level"></a>
+		  <h2>Top Level</h2>
+
+		  <!-- doc-group is important for keeping the logical elements adjacent on desktop and mobile -->
+		  <div class="doc-group">
+
+		  	<!-- doc-description is what shows up on the white background -->
+			  <div class="doc-description">
+			    <p>This is the bare minimum to get you started. For a more built out demo, check the <a href="samples.html">samples</a></p>
+			  </div>
+
+			  <!-- doc-code is what shows up on the white background -->
+			  <div class="doc-code">
+			    <p>Code ends up over here.</p>
+			  </div>
+			</div>
+		</section>
+
+		<!-- a reapeat from above -->
+    <section class="doc-section js-scrollspy" data-scrollspy="sub_level">
+		  <a name="sub_level"></a>
+		  <h3>Sub Level</h3>
+		  <div class="doc-group">
+			  <div class="doc-description">
+			    <p>This is a subsection of the top level</a></p>
+			  </div>
+			  </div>
+			</div>
+		</section>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script src="js/scrollspy.js"></script>
+  <script src="js/documentation.js"></script>
+
+</body>
+</html>
