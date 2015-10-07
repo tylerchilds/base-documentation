@@ -290,14 +290,14 @@
 
 .doc-description{
   box-sizing: border-box;
-  padding: 20px 20px 0;
+  padding: 20px;
 }
 
 @media (min-width: 768px){
   .doc-description{
     width: 50%;
     float: left;
-    padding: 20px 40px 0;
+    padding: 20px 40px;
   }
 }
 
